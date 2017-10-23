@@ -5,17 +5,13 @@ the_random_page
 {% endblock %}
 
 {% block page_content %}
-<h1 class="jumbotron display-4 d-none d-md-block">Best way to random anything!</h1>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-center font-weight-bold font" href="#"> The Random Page </a>
+</nav>
 
-<div class="container">
-  <h3 class="text-white d-md-none m-5">Best way to random anything!</h3>
-
-  <script src="/static/index.js">
-
-  </script>
-
-
-
-</div>
+<input type="text" name="item_to_random" value="">
+<button class="btn" type="button" name="button">Add Item </button>
+<br>
+<button class="btn btn-center" type="button" name="button"> Start radoming </button>
 
 {% endblock %}

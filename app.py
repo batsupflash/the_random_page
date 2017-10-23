@@ -1,11 +1,7 @@
 from flask import *
-import os
-import mlab
-from mongoengine import Document, StringField, IntField
 
 app = Flask(__name__)
 
-mlab.connect()
 
 @app.route('/')
 def index():
