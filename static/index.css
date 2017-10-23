@@ -1,0 +1,24 @@
+body{
+  background-image: url(https://i.pinimg.com/originals/86/6c/72/866c7204be0ad8d5e14444910cecd68a.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+
+
+}
+.card-game-type{
+  min-height: 683px !important;
+}
+.card-game-img{
+  object-fit: cover;
+  height: 20vw;
+}
+.card-img-detail{
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  width: 65vw;
+}
+
+/*.login_input{
+  max-width: 800px;
+}*/
