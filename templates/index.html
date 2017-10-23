@@ -5,12 +5,21 @@ the_random_page
 {% endblock %}
 
 {% block page_content %}
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand text-center font-weight-bold font" href="#"> The Random Page </a>
 </nav>
 
-<input type="text" name="item_to_random" value="">
-<button class="btn" type="button" name="button">Add Item </button>
+<div class="mashead">
+  <div class="header-content">
+    <h1 class="topfont text-center "> Best Way To Random ! </h1>
+
+  </div>
+
+</div>
+
+{% include "option_input.html" %}
+
 <br>
 <button class="btn btn-center" type="button" name="button"> Start radoming </button>
 

@@ -15,7 +15,9 @@ body{
   object-fit: cover;
   width: 65vw;
 }
-
+.topfont{
+  font-family: 'Lobster', cursive;
+}
 /*.login_input{
   max-width: 800px;
 }*/
