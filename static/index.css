@@ -29,9 +29,15 @@ body{
   background-position: center;
 
 }*/
+
+.info1{
+  font-family: 'Archivo Black', sans-serif;
+}
+
 .info{
   display: flex;
   flex-wrap: nowrap;
+
 }
 
 .toptext {
