@@ -7,16 +7,56 @@ the_random_page
 {% block page_content %}
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand text-center font-weight-bold font" href="#"> The Random Page </a>
+  <a class="navbar-brand text-center font-italic font-weight-bold font" href="#"> The Random Page </a>
 </nav>
 
 <div class="mashead">
   <div class="header-content">
-    <h1 class="topfont text-center "> Best Way To Random ! </h1>
+    <div class="header-content-inner">
+        <h1 class="toptext topfont" > #Best Way To Random !</h1>
+      <div class="buttontop">
+        <button class=" btn btn-default btn-danger col-md-2 font-italic  font-weight-bold mt-md-5" type="button" name="button">START RANDOMING</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container mt-md-5 mb-md-5 ">
+  <div class="info row">
+    <div class="card mx-md-2 col-md-4">
+      <div class="card-title bg-dark ">
+        <h1 class="text-primary"> Developer </h1>
+      </div>
+      <div class="card-body">
+        <h5 class="font-italic"> Programmer :</h5>
+        <p>  _ Tạ Quang Minh</p>
+        <p>  _ Dương Trần Nghĩa </p>
+        <h5 class="font-italic"> Designer : </h5>
+        <p>  _ Phan Thái Nam</p>
+
+
+      </div>
+    </div>
+    <div class="card mx-md-2 col-md-4">
+      <div class="card-title bg-dark ">
+        <h1 class="text-warning"> Contact </h1>
+      </div>
+
+
+    </div>
+    <div class="card mx-md-2 col-md-4">
+      <div class="card-title bg-dark ">
+        <h1 class="text-success"> About </h1>
+      </div>
+
+
+    </div>
 
   </div>
 
 </div>
+
 
 {% include "option_input.html" %}
 

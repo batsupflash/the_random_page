@@ -1,5 +1,5 @@
 body{
-
+  background-color: #eaeae1;
 
 }
 .card-game-type{
@@ -17,6 +17,41 @@ body{
 }
 .topfont{
   font-family: 'Lobster', cursive;
+}
+/*.toptext{
+  left: 0;
+  top: 0;
+  vertical-align: middle;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  background-image: url("https://ak5.picdn.net/shutterstock/videos/2324615/thumb/8.jpg");
+  background-position: center;
+
+}*/
+.info{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.toptext {
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+}
+.buttontop {
+  /*height: 100px !important;*/
+  text-align: center;
+
+}
+
+.header-content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  background-image: url("https://ak5.picdn.net/shutterstock/videos/2324615/thumb/8.jpg");
 }
 /*.login_input{
   max-width: 800px;
