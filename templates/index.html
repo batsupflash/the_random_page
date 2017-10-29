@@ -5,10 +5,12 @@ the_random_page
 {% endblock %}
 
 {% block page_content %}
+    <link rel="stylesheet" href="/static/index.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand text-center font-italic font-weight-bold font" href="#"> The Random Page </a>
+  <a class="text-white navbar-toggler navbar-toggler-right " href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
 </nav>
 
 <div class="mashead">
@@ -25,9 +27,9 @@ the_random_page
 
 <div class="container mt-md-5 mb-md-5 ">
   <div class="info row">
-    <div class="card mx-md-2 col-md-4">
+    <div class="cardinfo card mx-md-2 col-md-4">
       <div class="card-title bg-dark ">
-        <h1 class="info1 text-primary"> Developer </h1>
+        <h1 class="info1  mr-md-1 text-primary"> Developer </h1>
       </div>
       <div class="card-body">
         <h5 class="font-italic"> Programmer :</h5>
@@ -42,9 +44,9 @@ the_random_page
 
       </div>
     </div>
-    <div class="card mx-md-2 col-md-4">
+    <div class="card cardinfo mx-md-2 col-md-4">
       <div class="card-title bg-dark ">
-        <h1 class="info1 text-muted"> Contact </h1>
+        <h1 class= " mr-md-1 info1 text-muted"> Contact </h1>
       </div>
       <div class="card-body">
         <h5 class="font-italic" > Phone Number : </h5>
@@ -55,11 +57,22 @@ the_random_page
 
 
     </div>
-    <div class="card mx-md-2 col-md-4">
+    <div class="card cardinfo mx-md-2 col-md-4">
       <div class="card-title bg-dark ">
-        <h1 class="text-warning info1"> FAQ </h1>
+        <h1 class=" mr-md-1 text-warning info1"> FAQ </h1>
+
+      </div>
+      <div class= "mx-md-1">
+        <form class="form " action="index.html" method="post">
+          <label for="">Your Name</label>
+          <input class="form-control" type="text" name="" value="">
+          <label for="">Question</label>
+          <input class="form-control" type="text" name="" value="">
+          <button class="btn btn-primary float-right mt-md-2" type="button" name="button">Submit</button>
+
       </div>
 
+      </form>
 
     </div>
 
@@ -68,9 +81,9 @@ the_random_page
 </div>
 
 
-{% include "option_input.html" %}
+<!-- {% include "option_input.html" %}
 
 <br>
 <button class="btn btn-center" type="button" name="button"> Start radoming </button>
 
-{% endblock %}
+{% endblock %} -->
