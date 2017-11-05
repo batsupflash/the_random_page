@@ -1,6 +1,4 @@
 body{
-  background-color: #eaeae1;
-
 }
 .card-game-type{
   min-height: 683px !important;
@@ -17,6 +15,7 @@ body{
 }
 .topfont{
   font-family: 'Lobster', cursive;
+  color: white;
 }
 /*.toptext{
   left: 0;
@@ -38,6 +37,11 @@ body{
   display: flex;
   flex-wrap: nowrap;
 
+
+}
+.cardinfo{
+ padding: 0 !important
+
 }
 
 .toptext {
@@ -50,14 +54,44 @@ body{
   text-align: center;
 
 }
+.button {
+  border-radius: 10px
+
+}
 
 .header-content-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
+  height: 700px;
   width: 100%;
-  background-image: url("https://ak5.picdn.net/shutterstock/videos/2324615/thumb/8.jpg");
+  background-image: url(/static/images/45b8f77ff445300d1893e930dc3c0c4e.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.random-field{
+  background-color: #343a40;
+  height: 350px
+}
+.randomplace{
+  text-align: center;
+
+}
+.random-field-font{
+  color: white
+
+}
+
+.inputrandom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+  width: 350px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+
+
 }
 /*.login_input{
   max-width: 800px;
