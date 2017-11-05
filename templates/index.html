@@ -1,35 +1,272 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block page_title %}
-the_random_page
-{% endblock %}
+  <head>
 
-{% block page_content %}
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand text-center font-italic font-weight-bold font" href="#"> The Random Page </a>
-</nav>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<div class="mashead">
-  <div class="header-content">
-    <div class="header-content-inner">
-        <h1 class="toptext topfont" >Best Way To Random!</h1>
-      <div class="buttontop">
-        <a href="#" class=" btn btn-default btn-danger col-md-2 font-italic  font-weight-bold mt-md-5" >START RANDOMING!</a>
+    <title>the_random_page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <script src="static/js/creative.min.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">THE_RANDOM_PAGE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">GO!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">For bored guys</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
+    <header class="masthead">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1 id="homeHeading">#THEBESTWAYTORANDOM!</h1>
+          <hr>
+          <p>the_random_page help you with whatever you wanted to random! Just type in the choices, hit RANDOM NOW!, you will know what you should do in half a second! <br> What do you waiting for? RANDOM NOW!</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">LET'S RANDOM !</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Type in the number of choices: </h2>
+              <input type="number" class="form-control m-3" id="choice" name="item_to_random"  value="">
+              <button class="btn btn-default btn-xl mb-4" type="button" onclick="addFields()" name="add_item_button" >Add choices</button>
+              <h5 id="choices_field" class="text-white" ></h5>
+            <hr class="light">
+            <h3 class="section-heading text-white">And now hit RANDOM!</h3>
+            <button class="btn btn-default btn-xl m-3" onclick="random()" type="button" name="button">RANDOM NOW!</button>
+            <br>
+            <a class="btn btn-default btn-xl js-scroll-trigger m-3" href="#services">More about us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Some thing about us</h2>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+              <h3>Sturdy Platform</h3>
+              <p class="text-muted">We used a very stricted logical code so they don't break.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-circle-o-notch fa-spin text-primary fa-fw sr-icons"></i>
+              <h3>Less time-consuming</h3>
+              <p class="text-muted">Don't waste your time thinking of chosing stuffs, random it!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+              <h3>Up to Date</h3>
+              <p class="text-muted">We update very frequently to keep things fresh.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+              <h3>Made with Love</h3>
+              <p class="text-muted">And brought to you by love <3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="static/img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="static/img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random about
+                  </div>
+                  <div class="project-name">
+                    School stuffs
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/static/img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="/static/img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random about
+                  </div>
+                  <div class="project-name">
+                    Reading books
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/static/img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="/static/img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random about
+                  </div>
+                  <div class="project-name">
+                    Buying cameras
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/static/img/portfolio/fullsize/4.jpg">
+              <img class="img-fluid" src="/static/img/portfolio/thumbnails/4.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random about
+                  </div>
+                  <div class="project-name">
+                    What to cook
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/static/img/portfolio/fullsize/5.jpg">
+              <img class="img-fluid" src="/static/img/portfolio/thumbnails/5.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random about
+                  </div>
+                  <div class="project-name">
+                    Anything!
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="static/img/portfolio/fullsize/6.jpg">
+              <img class="img-fluid" src="static/img/portfolio/thumbnails/6.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random about
+                  </div>
+                  <div class="project-name">
+                    Building something
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="call-to-action bg-dark">
+      <div class="container text-center">
+        <h2>Some suggestions for your choices!</h2>
+        <p>If you're bored and don't know what to do, here are some thing you can get on to right away!<br>And if you're just lack of ideas you can properly seeing some choices you can consider adding too.</p>
+        <a class="btn btn-default btn-xl sr-button" target="_blank" href="http://www.google.com">Get more suggestion!</a>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="container mt-md-5 mb-md-5 ">
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="primary">
+            <p>Having a good time using this page? We hope so! If not, be sure to contact us to tell what you are upset with, we are willing to hear. If you ARE having a good time, contact to let us know!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x sr-contact"></i>
+            <p>091-347-8978</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+            <p>
+              <a href="mailto:Phanthainam1092002@gmail.com">Phanthainam1092002@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  {% include "option_input.html" %}
-  <button class="btn btn-center" onclick="random()" type="button" name="button"> Start randoming </button>
-  {% include "random_page.html" %}
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</div>
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="static/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+    <!-- Custom scripts for this template -->
+    <script src="static/js/creative.min.js"></script>
 
-{% endblock %}
+  </body>
+
+</html>
