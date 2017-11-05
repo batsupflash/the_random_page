@@ -1,4 +1,5 @@
 body{
+  background-color: grey;
 }
 .card-game-type{
   min-height: 683px !important;
@@ -12,6 +13,9 @@ body{
   margin: auto;
   object-fit: cover;
   width: 65vw;
+}
+.foot{
+  border-radius: 100;
 }
 .topfont{
   font-family: 'Lobster', cursive;
@@ -71,10 +75,10 @@ body{
 }
 .random-field{
   background-color: #343a40;
-  height: 350px
+  height: 350px;
+  overflow: auto;
 }
 .randomplace{
-  text-align: center;
 
 }
 .random-field-font{
@@ -83,13 +87,15 @@ body{
 }
 
 .inputrandom{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;;
   width: 350px;
   height: 50px;
-  text-align: center;
-  display: inline-block;
+
+
+
+}
+.randombuttonfield{
+  height: 40px;
+  background-color: 		#696969;
 
 
 }

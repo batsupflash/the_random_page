@@ -11,7 +11,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="/static/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 
   </head>
   <body>
@@ -19,8 +21,60 @@
     {% block page_content %}
     {% endblock %}
 
-    <footer class="float-right text-dark m-3">
-      Copyright (C) therandomguy.co
-    </footer>
+    <script src="static/random.js">
+    </script>
+
+
   </body>
+  <footer class="p-4 foot">      <div class="info row">
+          <div class="cardinfo card  col-md-4">
+            <div class="card-title bg-dark ">
+              <h1 class="info1   text-primary"> Developer </h1>
+            </div>
+            <div class="card-body">
+              <h5 class="font-italic"> Programmer :</h5>
+              <a href="https://www.facebook.com/ta.quangminh.3"> _ Tạ Quang Minh</a>
+              <br>
+              <a href="https://www.facebook.com/nghia.ngongan.912">_ Dương Trần Nghĩa </a>
+              <h5 class="font-italic"> Designer : </h5>
+              <a href="https://www.facebook.com/nam.pt.16"> _ Phan Thái Nam</a>
+              <h5 class="font-italic">Tester :</h5>
+              <a href="https://www.facebook.com/paint.my.life.over.and.over?sk=wall">__ Đặng Nguyễn Phương Trang</a>
+
+
+            </div>
+          </div>
+          <div class="card cardinfo col-md-4">
+            <div class="card-title bg-dark ">
+              <h1 class= "info1 text-muted"> Contact </h1>
+            </div>
+            <div class="card-body">
+              <h5 class="font-italic" > Phone Number : </h5>
+              <a href="#">0913478978</a>
+              <h5 class="font-italic" >Email :</h5>
+              <a href="#">Phanthainam1092002@gmail.com</a>
+            </div>
+
+
+          </div>
+          <div class="card cardinfo col-md-4">
+            <div class="card-title bg-dark ">
+              <h1 class="  text-warning info1"> FAQ </h1>
+
+            </div>
+            <div class= "">
+              <form class="form " action="index.html" method="post">
+                <label for="">Your Name</label>
+                <input class="form-control" type="text" name="" value="">
+                <label for="">Question</label>
+                <input class="form-control" type="text" name="" value="">
+                <button class="button btn btn-primary float-right mt-md-2" type="button" name="button">Submit</button>
+
+            </div>
+
+            </form>
+
+          </div>
+
+        </div></footer>
 </html>
