@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="static/css/creative.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="static/icon/android-icon-36x36.png"/>
+    <link rel="shortcut icon" type="image/png" href="static/icon/ms-icon-70x70.png"/>
   </head>
 
   <body id="page-top">
@@ -70,13 +70,13 @@
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Type in the number of choices: </h2>
-              <input type="number" class="form-control m-3" id="choice" name="item_to_random"  value="">
+              <input type="number" class="form-control m-3" id="choice" name="item_to_random" onkeypress="addFields(e)"  value="">
               <button class="btn btn-default btn-xl mb-4" type="button" onclick="addFields()" name="add_item_button" >Add choices</button>
               <h5 id="choices_field" class="text-white" ></h5>
             <hr class="light">
             <h3 class="section-heading text-white">And now hit RANDOM!</h3>
             <button class="btn btn-default btn-xl m-3" onclick="random()" type="button" name="button">RANDOM NOW!</button>
-            <hr class="light">
+            <hr id="random_line"  class="light">
 
             <h1 id="result_field" class="text-white"></h1>
 
