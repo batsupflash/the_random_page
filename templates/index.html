@@ -6,7 +6,9 @@ the_random_page
 
 {% block page_content %}
 
-
+<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand text-center font-italic font-weight-bold font" href="#"> The Random Page </a>
 </nav>
@@ -16,28 +18,28 @@ the_random_page
     <div class="header-content-inner">
         <h1 class="toptext topfont" > #Best Way To Random !</h1>
       <div class="buttontop">
-        <a href="#" class=" btn btn-default btn-danger col-md-2 font-italic  font-weight-bold mt-md-5" >START RANDOMING</a>
+        <button type="button"  name="button" onclick="scrolltrigger" class=" btn btn-default btn-danger col-md-2 font-italic  font-weight-bold mt-md-5" >START RANDOMING</button>
       </div>
 
     </div>
   </div>
 </div>
 
-  <div class="container randomplace">
-      <label class="random-field-font font-weight-bold mt-md-2 " for="">Number of Choices</label>
+  <div class="scroll-to container randomplace">
+      <label class="random-field-font font-weight-bold mt-md-5 " for="">Number of Choices</label>
       <input type="number" class="inputrandom form-control " id="choice">
-      <button class="button btn btn-danger mt-md-2" type="button" onclick="addFields()" name="button"> Add choices </button>
-      <div id="choices_field" class="text-white m-3">
+      <button class="button btn btn-danger mt-md-2 font-weight-bold" type="button" onclick="addFields()" name="button"> Add choices </button>
+      <div id="choices_field" class="text-white m-3 row">
       </div>
-      <div class="text-white m-3" id="result_field">
+      <div class="text-dark c m-3" id="result_field">
 
       </div>
       <br>
-      <button   class="button  btn btn-danger mt-md-2" type="button" onclick="random()" name="button">Random Now !</button>
+      <button   class="button  btn btn-danger mt-md-2" type="button" id="random_button" style="display:none" onclick="random()" name="button">Random Now !</button>
+
       <label Class="random-field-font"  for=""></label>
 
   </div>
-
 
 
 

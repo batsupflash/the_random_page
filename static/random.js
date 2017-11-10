@@ -21,11 +21,22 @@ function addFields(){
                 var input = document.createElement("input");
                 input.type = "text";
                 input.id = "choice" + i;
-                input.className = "form-control m-3";
+                input.className = "form-control m-3 col-5  ";
+                input.style = "heigh: 50px";
                 container.appendChild(input);
-                // Append a line break
                 container.appendChild(document.createElement("br"));
 
+                container.appendChild(document.createTextNode("Frequency "+(i+1)+ " (Defaut = 1)"));
+                var luck = document.createElement("input");
+                luck.type = "number";
+                luck.id = "luck"+i;
+                luck.className = "form-control m-3 col-3";
+                container.appendChild(luck);
+                // Append a line break
+                container.appendChild(document.createElement("br"));
+                var random_button = document.getElementById("random_button");
+
+                random_button.style = "display:block";
             }
         }
 
@@ -33,7 +44,18 @@ function random(){
   var number = document.getElementById("choice").value;
   for (var i = 0; i < number; i++) {
     var choice = document.getElementById("choice"+i).value;
-    list_of_choices.push(choice);}
+    var luck = parseInt(document.getElementById("luck"+i).value);
+    if (luck>0) {
+      for (var y = 0; y < luck; y++) {
+        list_of_choices.push(choice);
+        }
+    }
+
+    else {
+      list_of_choices.push(choice);
+
+    }
+    }
   var result = list_of_choices[Math.floor(Math.random() * list_of_choices.length)];
   if (result == undefined || result == ""){
     alert("You haven't typed in anything! :(");
@@ -46,4 +68,16 @@ function random(){
     container.appendChild(document.createTextNode("The result is: "+result));
     list_of_choices = [];
   }
+}
+
+function scrolltrigger() {
+  $(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+       console.log('H1 on the view!');
+   }
+});
 }

@@ -1,5 +1,4 @@
 body{
-  background-color: grey;
 }
 .card-game-type{
   min-height: 683px !important;
@@ -13,9 +12,6 @@ body{
   margin: auto;
   object-fit: cover;
   width: 65vw;
-}
-.foot{
-  border-radius: 100;
 }
 .topfont{
   font-family: 'Lobster', cursive;
@@ -35,9 +31,7 @@ body{
 
 .info1{
   font-family: 'Archivo Black', sans-serif;
-
 }
-
 
 .info{
   display: flex;
@@ -77,10 +71,10 @@ body{
 }
 .random-field{
   background-color: #343a40;
-  height: 350px;
-  overflow: auto;
+  height: 350px
 }
 .randomplace{
+  text-align: center;
 
 }
 .random-field-font{
@@ -89,32 +83,16 @@ body{
 }
 
 .inputrandom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
   width: 350px;
   height: 50px;
-
-
-
-}
-.randombuttonfield{
-  height: 40px;
-  background-color: 		#696969;
+  text-align: center;
+  display: inline-block;
 
 
 }
-.b{
-  	background-color: #A9A9A9;
-
-}
-.a{
-  border-width: 0px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.c{
-  font-family: 'Pacifico', cursive;
-  font-size: 50px
-}
-
 /*.login_input{
   max-width: 800px;
 }*/
